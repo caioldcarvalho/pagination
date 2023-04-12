@@ -24,18 +24,6 @@ define('DB_NAME', $config->database['database']);
 define('DB_USER', $config->database['username']);
 define('DB_PASS', $config->database['password']);
 
-define('SMTP_MAIL', [
-    'host' => $config->smtp['host'],
-    'port' => $config->smtp['port'],
-    'SMTPSecure' => $config->smtp['SMTPSecure'],
-    'user' => $config->smtp['user'],
-    'password' => $config->smtp['password'],
-    'from_name' => $config->smtp['from_name'],
-    'from_email' => $config->smtp['from_email'],
-    'recipient' => $config->smtp['recipient'],
-    'copy' => array()
-]);
-
 function redirectToIndex($message = '')
 {
     echo "<meta http-equiv='refresh' content='0;URL=" . BASE_URL . "'>";
