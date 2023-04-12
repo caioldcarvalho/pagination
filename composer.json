@@ -3,7 +3,8 @@
     "description": "small project for implementing pagination in php",
     "type": "library",
     "require": {
-        "composer/composer": "^2.5"
+        "composer/composer": "^2.5",
+        "ext-pdo_mysql": "*"
     },
     "license": "AGPL",
     "autoload": {
