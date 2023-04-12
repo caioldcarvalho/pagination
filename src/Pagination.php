@@ -9,35 +9,35 @@ namespace Caio\Pagination;
 
 class Pagination
 {
-    public $cur_page;
-    public $total;
-    public $per_page;
+    public $currentPage;
+    public $totalItems;
+    public $itemsPerPage;
 
-    function __construct($cur_page, $total, $per_page)
+    function __construct($currentPage, $totalItems, $itemsPerPage)
     {
-        $this->cur_page = $cur_page;
-        $this->total    = $total;
-        $this->per_page = $per_page;
+        $this->currentPage  = $currentPage;
+        $this->totalItems   = $totalItems;
+        $this->itemsPerPage = $itemsPerPage;
     }
 
-    function getTotalPage()
+    function getTotalPages()
     {
-        return ceil($this->total / $this->per_page);
+        return ceil($this->totalItems / $this->itemsPerPage);
     }
 
     function hasPrevPage()
     {
-        return $this->cur_page > 1;
+        return $this->currentPage > 1;
     }
 
     function hasNextPage()
     {
-        return $this->cur_page < $this->getTotalPage();
+        return $this->currentPage < $this->getTotalPages();
     }
 
     function offset()
     {
-        return ($this->cur_page - 1) * $this->per_page;
+        return ($this->currentPage - 1) * $this->itemsPerPage;
     }
 }
 
