@@ -1,0 +1,20 @@
+{
+    "name": "caio/pagination",
+    "description": "small project for implementing pagination in php",
+    "type": "library",
+    "require": {
+        "composer/composer": "^2.5"
+    },
+    "license": "AGPL",
+    "autoload": {
+        "psr-4": {
+            "Caio\\Pagination\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Caio Carvalho",
+            "email": "caioldcarvalho@protonmail.com"
+        }
+    ]
+}
