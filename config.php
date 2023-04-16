@@ -13,6 +13,8 @@ define('ROOT_DIR', '/opt/lampp/htdocs/');
 $config   = include(ROOT_DIR . 'config/config-pagination.php');
 $proj_dir = ROOT_DIR . "pagination/";
 
+define('PROJ_DIR', $proj_dir);
+
 /**
  * End of must-change part.
  */
